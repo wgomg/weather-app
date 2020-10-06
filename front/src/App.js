@@ -40,7 +40,7 @@ function App() {
           const res = await axios(`/api/weather/cities/${requestedCity}/${requestedData.name}`);
           setResponseData(res.data);
         } catch (error) {
-          setRequestedData('error');
+          setRequestedData({ name: 'error' });
           setResponseData(error);
         }
       }
