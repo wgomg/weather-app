@@ -1,0 +1,19 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "Simple weather data processing app",
+  "main": "back/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "front": "npm start --prefix front",
+    "back": "npm run dev --prefix back",
+    "dev": "concurrently \"npm run back\" \"npm run front\"",
+    "start": "NODE_ENV=production node back/server.js",
+    "postinstall": "(cd back && npm install); (cd front && npm install); (cd front && npm run build)"
+  },
+  "author": "wgomg@pm.me",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^5.3.0"
+  }
+}
