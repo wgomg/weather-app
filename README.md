@@ -1,7 +1,7 @@
 ## weather app
 
 ### Requirements
-- For install you should have installed [nodejs](https://nodejs.org)
+- You should have installed [nodejs](https://nodejs.org)
 
 ### Install
 - Clone this repo.
